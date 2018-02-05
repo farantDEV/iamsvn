@@ -1,0 +1,31 @@
+<section id="about" class="team">
+	<div class="container">
+		<div class="row">
+
+			<div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
+				<h2>Mur des Messages</h2>
+				<div class="devider"><i class="fa fa-chevron-down"></i></div>
+			</div>
+
+			<div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
+				<p></p>
+			</div>
+
+			<!-- single member -->
+			<figure class="messages-wall col-md-12 wow fadeInUp animated" data-wow-duration="500ms">
+				{% for message in messages %}
+				<div class="postit  col-md-4 col-sm-6 col-xs-12 ">
+						<div class="postit-content">
+							<h5>{{ message.name }}</h5><br/>
+							<p>{{ message.content }}</p>
+						</div>
+				
+				</div>
+				{% endfor %}
+			</figure>
+			<!-- end single member -->
+
+
+		</div>
+	</div>
+</section>

@@ -15,7 +15,7 @@
 
 			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
 				<div class="contact-address">
-					<h3 class="roboto"> Si vous avez des questions, vous pouvez également me contacter par <a href="mailto:iam7vn@gmail.com"> email</a> </h3>
+					<h3 class="roboto"> Si vous avez des questions, vous pouvez également me contacter par <a href="mailto:iam7vn@gmail.com"> email.</a> </h3>
 					
 					
 				</div>
@@ -23,30 +23,25 @@
 
 			<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
 				<div class="contact-form">
-					
-					<form action="#" id="contact-form">
-						<div class="input-group name-email">
-							<div class="input-field">
-								<input type="text" name="name" id="name" placeholder="Nom" class="form-control">
-							</div>
-							<div class="input-field">
-								<input type="email" name="email" id="email" placeholder="Email" class="form-control">
-							</div>
-						</div>
-						<div class="input-group">
-							<textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
-						</div>
-						<div class="input-group">
-							<input type="submit" id="form-submit" class="pull-right" value="Poster Message">
-						</div>
-					</form>
+				
+					<form id="contact" action="" method="post">
+				   {{ form_errors(form) }}
+					<div class="input-field">
+					   {{ form_widget(form.name, {'attr': {'class': 'form-control', 'placeholder': 'Nom', 'id': 'name'}}) }}
+					</div>
+					<div class="input-field">
+					 {{ form_widget(form.email, {'attr': {'class': 'form-control', placeholder: 'Email', 'id': 'email'}}) }}
+					</div>
+					<div class="input-group">
+					  {{ form_widget(form.content, {'attr': {'class': 'form-control', placeholder: 'Message', 'id': 'message'}}) }}
+					</div>
+					{{ form_rest(form) }}
+					<div class="input-group">
+						<input type="submit" id="form-submit" class="pull-right" value="Poster Message">
+					</div>
+				  </form>
 				</div>
 			</div>
-
-
-			
-
-
 		</div>
 	</div>
 
