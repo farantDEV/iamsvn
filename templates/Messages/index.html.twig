@@ -3,28 +3,27 @@
 
 	
 {% block stylesheets %}
-<link href="https://fonts.googleapis.com/css?family=Leckerli+One|Roboto" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/media-queries.css">
-        <script src="assets/js/modernizr-2.6.2.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Leckerli+One|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/media-queries.css">
+	<script src="assets/js/modernizr-2.6.2.min.js"></script>
 {% endblock %}
 
 {% block body %}
   
-<div id="preloader">
-			<img src="assets/img/loading.gif" alt="Preloader">
-		</div>
+	<div id="preloader">
+		<img src="assets/img/loading.gif" alt="Preloader">
+	</div>
+	{{ include ('Messages/menu-nav.html') }}
 
-        {{ include ('Messages/menu-nav.html') }}
+
+	{{ include ('Messages/messages.html') }}
+
+	{{ include ('script-js.html') }}
 		
 		
-		{{ include ('Messages/messages.html') }}
-		
-		{{ include ('script-js.html') }}
-		
-		
-	{% endblock %}
+{% endblock %}

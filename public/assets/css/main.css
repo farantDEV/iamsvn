@@ -93,7 +93,10 @@ body > section,
   
 }
 #bio{
-	margin: 35% 5% 2% 5%;
+	margin: 5% 5% 2% 5%;
+}
+.audio-control{
+	margin: 35% 37% 0;
 }
 
 img.img-responsive{

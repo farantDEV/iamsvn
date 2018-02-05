@@ -1,6 +1,4 @@
 {% extends 'base.html.twig' %}
-
-
 	
 {% block stylesheets %}
 <link href="https://fonts.googleapis.com/css?family=Leckerli+One|Roboto" rel="stylesheet">
@@ -15,26 +13,19 @@
 
 {% block body %}
   
-<div id="preloader">
-			<img src="assets/img/loading.gif" alt="Preloader">
-		</div>
+	<div id="preloader">
+		<img src="assets/img/loading.gif" alt="Preloader">
+	</div>
 
-        {{ include ('App/menu-nav.html') }}
-		
-		{{ include ('App/sections/slider.html')}}
+	{{ include ('App/menu-nav.html') }}
 
+	{{ include ('App/sections/slider.html')}}
 		
-		
-			{{ include ('App/sections/merci.html') }}
-		
+	{{ include ('App/sections/merci.html') }}
 
-		
-			{{ include ('App/sections/galerie.html') }}
+	{{ include ('App/sections/galerie.html') }}
 
-
-		
-			{{ include ('App/sections/contact.html') }}
-
+	{{ include ('App/sections/contact.html') }}
 		
 		<a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
 		
