@@ -17,6 +17,13 @@ ol, ul {
     list-style: none;
 }
 
+em{
+	color: #000;
+}
+em:hover{
+	color: #fff;
+}
+
 figure, p {
     margin: 0;
 }
